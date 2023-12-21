@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Welcome in Data Files"
+AuthUserFile /etc/httpd/.htpasswd
+Require valid-user
