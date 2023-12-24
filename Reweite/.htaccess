@@ -1,0 +1,8 @@
+#enable Rewrite Module
+RewriteEngine on 
+#URL match ahmed or ahmed/ will go to ahmed.com/data
+RewriteRule ^ahmed/?$  http://ahmed.com/data 
+#URL match iti and iti* will go to salama.com/data/b.html
+RewriteRule ^iti*  /data/b.html 
+#URL match messi or messi/ will redirect it to samy.com/data/a.html and no casesensetive
+RewriteRule ^messi/?$   http://samy.com/data/a.html [R=302,NC]
